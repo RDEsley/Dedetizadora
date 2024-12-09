@@ -40,19 +40,19 @@
         <div class="row">
             <div class="col mt-5">
                 <?php
-                include("./conexao/conexao.php");
+                include("../conexao/conexao.php");
                 switch (@$_REQUEST["page"]) {
                     case "novo":
-                        include("./criar-usuario/novo-usuario.php");
+                        include("../controllers/novo-usuario.php");
                         break;
                     case "listar":
-                        include("./listar/listar-usuario.php");
+                        include("../controllers/listar-usuario.php");
                         break;
                     case "salvar":
-                        include("./salvar/salvar-usuario.php");
+                        include("../controllers/salvar-usuario.php");
                         break;
                     case "editar":
-                        include("editar-usuario.php");
+                        include("../controllers/editar-usuario.php");
                         break;
                     default:
                         print "<h1>Bem-Vindo(a) Admin  </h1>";

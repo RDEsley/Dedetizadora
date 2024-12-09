@@ -6,4 +6,5 @@ if (!isset($_SESSION)) {
 
 session_destroy();
 
-header("Location: /src/views/index.php");
+header("Location: /Dedetizadora/src/views/index.php");
+
