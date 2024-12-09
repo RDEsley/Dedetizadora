@@ -18,21 +18,17 @@
 
 .rec {
   font-size: large;
-
-  
 }
 
 n {
-  text-decoration-color: #246D45;
+  text-decoration-color: #246d45;
   color: #137d43;
   font-weight: bold;
-
 }
 
 a {
   text-decoration: none;
 }
-
 
 img {
   width: 100%;
@@ -54,25 +50,20 @@ i {
   padding: 2rem;
 }
 
-.header-fixed iee{
-  
+.header-fixed iee {
   color: rgb(255, 255, 255);
-  
+
   text-transform: capitalize;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* Header fixed */
-
 
 .header-fixed {
   text-align: center;
   align-items: center;
   align-content: center;
-  
 }
-
 
 #navbar-fixed {
   display: flex;
@@ -82,7 +73,7 @@ i {
   border: 10px;
 
   border-radius: 10px;
-  
+
   padding: 10px;
   gap: 4rem;
   max-width: max-content;
@@ -92,38 +83,31 @@ i {
   text-transform: uppercase;
   margin-right: 2rem;
   z-index: 4;
-  background-color: #246D45;
+  background-color: #246d45;
 }
 
 #navbar-fixed a {
   color: var(--primary-text-color);
   font-weight: bold;
-  
 }
-
 
 /* Cabeçalho e banner */
 #header {
   padding-top: 70px;
   min-height: 90vh;
-  background-image: url("../img/main_banner4.png");
+  background-image: url("../../img/main_banner4.png");
   background-size: cover;
   background-position: center;
   color: var(--primary-text-color);
   margin-bottom: 2rem;
   position: relative;
-
-
 }
 
-
 #inner-header {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 #brand {
   background-color: var(--main-color);
@@ -135,12 +119,10 @@ i {
 }
 
 #navbar {
-
   display: flex;
   gap: 4rem;
   text-transform: uppercase;
   margin-right: 2rem;
-
 }
 
 #navbar a {
@@ -160,19 +142,15 @@ i {
   transition: 0.6s;
 }
 
-
-
 .banner h2 {
   font-size: 4rem;
   margin-bottom: 1.2rem;
   position: relative;
   z-index: 2;
-
 }
 
 .banner p {
   font-size: 1.5rem;
-
 }
 
 .square {
@@ -207,9 +185,7 @@ i {
 /* Áreas de atuação */
 .text-image-container {
   background-color: rgba(255, 255, 255, 0.918);
-
 }
-
 
 .text-image-section {
   display: flex;
@@ -218,29 +194,23 @@ i {
 }
 
 .text-container {
-  
   flex: 2 1 0;
   display: flex;
   gap: 2rem;
-  
+
   flex-direction: column;
   justify-content: center;
   text-align: right;
-  
 }
 
 .text-containerr {
-  
   flex: 2 1 0;
   display: flex;
   gap: 2rem;
   flex-direction: column;
   justify-content: center;
   text-align: right;
-  
 }
-
-
 
 .orcamentonope {
   margin-top: 50px;
@@ -262,14 +232,12 @@ i {
   font-weight: bold;
   font-size: 40px;
   color: var(--main-color);
-
 }
 
 .form-buttons {
   display: flex;
   justify-content: space-between;
 }
-
 
 .selected-services {
   margin-top: 20px;
@@ -297,7 +265,6 @@ i {
   font-size: 20px;
   padding-top: 1px;
   bottom: unset;
-
 }
 
 .btn {
@@ -313,7 +280,6 @@ i {
 .image-container {
   flex: 1 1 350px;
   position: relative;
-
 }
 
 .image-container i {
@@ -358,8 +324,6 @@ i {
   text-transform: uppercase;
 }
 
-
-
 /* Sobre nós */
 #about {
   display: flex;
@@ -369,7 +333,7 @@ i {
 }
 
 #about-text {
-  background-image: url("../img/pattern.png");
+  background-image: url("../../img/pattern.png");
   background-size: cover;
   background-position: center;
   color: var(--primary-text-color);
@@ -449,26 +413,21 @@ i {
   margin: auto;
 }
 
-
 /* Depoiments */
 
-
-.depoiments{
- 
+.depoiments {
   padding: 50px 20px;
-  
+
   position: relative;
   overflow: hidden;
-  
+
   margin-bottom: 25px;
-  background-image: url("../imgE/backPaper.jpg");
+  background-image: url("../../img/backPaper.jpg");
 }
 
 .depoiments-container {
   width: max-content;
-  
-  
-} 
+}
 
 .depoiments .slide {
   padding: 40px 60px;
@@ -478,16 +437,14 @@ i {
   cursor: grabbing;
 }
 
-
 .depoiments p.depoi-txt {
   font-weight: 400;
   margin-bottom: 50px;
-  
-  color: #000000;
 
+  color: #000000;
 }
 
-.slide .person img{
+.slide .person img {
   width: 80px;
   height: 80px;
 }
@@ -498,21 +455,20 @@ i {
   gap: 20px;
 }
 
-.slide .person p.name-person{
+.slide .person p.name-person {
   font-size: 18px;
   font-weight: 600;
 }
 
-.slide .person p.func-person{
+.slide .person p.func-person {
   font-size: 14px;
 }
 
-@media screen and (max-width: 768px){
-  .nav-btn{
+@media screen and (max-width: 768px) {
+  .nav-btn {
     display: none;
   }
 }
-
 
 /* Colaboradores */
 #team {
@@ -557,7 +513,7 @@ i {
   margin: 0.5rem 0;
 }
 /*Nossas Licenças*/
-.ro rogerio{
+.ro rogerio {
   color: var(--green-bg-color);
   padding-bottom: 200px;
 }
@@ -565,14 +521,11 @@ i {
 .ro {
   color: #fff;
   padding-bottom: 200px;
-  background-image: url(../imgE/meio-ambiente.jpg);
+  background-image: url('../../img/meio-ambiente.jpg');
 }
-
-
 
 /* Contato */
 #contact {
-  
   background-color: var(--main-color);
   gap: 0;
   padding-bottom: 5rem;
@@ -581,7 +534,7 @@ i {
 #contact-information {
   position: relative;
   text-align: left;
- 
+
   padding: 3rem;
   padding-top: 100px;
   flex: 1 1 0;
@@ -592,17 +545,15 @@ i {
 }
 
 #contact-information i {
-  
   position: absolute;
   top: 0;
   left: 0;
-  
+
   background-color: var(--primary-text-color);
   color: var(--main-color);
 }
 
 #contact-information form {
-  
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -760,7 +711,6 @@ i {
 
 /* Responsivo */
 @media (max-width: 450px) {
-
   /* Geral */
   body {
     overflow-x: hidden;
@@ -901,9 +851,6 @@ i {
   .links-container {
     width: 100%;
   }
-
- 
-
 }
 
 .footer-rights {
@@ -914,12 +861,11 @@ i {
 .div-rights {
   background-color: #000000;
   color: #fff;
-  
+
   text-align: center;
 }
 .directors {
   font-size: 14px;
   font-family: sans-serif;
   color: #fff;
-  
 }
