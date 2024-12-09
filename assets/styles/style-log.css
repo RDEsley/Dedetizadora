@@ -1,0 +1,91 @@
+button {
+    
+    
+    background-color: #006eff;
+    color: #fff;
+    
+   
+    text-align: center;
+    align-content: center;
+
+
+    padding: 10px;
+    margin-right: 0;
+    border: none;
+    
+    
+   
+
+    border-radius: 5px;
+    
+    
+    cursor: pointer;
+   
+   
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+
+    background-image: url('https://paamsj.org.br/wp-content/uploads/2024/03/Floresta-amazonica-mudanca-climatica.jpeg');
+
+}
+
+
+
+
+
+.login-container {
+    
+
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+a button:hover {
+    background-color: #0056b3;
+}

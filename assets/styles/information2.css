@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+:root {
+    --main-color: #d92123;
+    --primary-text-color: #fff;
+    --secondary-text-color: #191919;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
+    --secondary-bg-color: #5c1011;
+    --green-bg-color: #41b70a;
+  }
+  
+
+
+  .reed {
+    background-color: var(--green-bg-color);
+  }
+
+#navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #5c1011; /* Mesmo fundo da navbar */
+    transition: top 0.3s;
+}
+
+.container-c {
+    background-color: #5c1011;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+#color-footer {
+    background-color: #191919;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #000000;
+}
