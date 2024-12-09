@@ -1,4 +1,4 @@
-<?php include_once('/src/middlewares/validaLoginAdm.php'); ?>
+<?php include_once('./middlewares/validaLoginAdm.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">

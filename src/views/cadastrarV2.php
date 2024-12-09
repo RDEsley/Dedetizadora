@@ -1,5 +1,5 @@
 <?php
-include("/src/conexao/conexao.php");
+include("../conexao/conexao.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['acao'] == "cadastrar") {
     // Recuperar os dados do formulário

@@ -1,4 +1,4 @@
-<?php include_once("/src/controllers/editar-usuario.php"); ?>
+<?php include_once("./controllers/editar-usuario.php"); ?>
 
 <?php {?>
 
