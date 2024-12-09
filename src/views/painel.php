@@ -20,7 +20,7 @@ include('./middlewares/protect.php');
 
   <!-- SwarpJs -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/assets/styles/swiper-bundle.min.css">
+  <link rel="stylesheet" href=".../assets/styles/swiper-bundle.min.css">
 
 
   <!-- Google Fonts -->
@@ -36,10 +36,10 @@ include('./middlewares/protect.php');
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="/assets/styles/styles.css" />
+  <link rel="stylesheet" href=".../assets/styles/styles.css" />
 
   <!-- Scripts -->
-  <script src="/assets/scripts/scripts.js" defer></script>
+  <script src=".../assets/scripts/scripts.js" defer></script>
 </head>
 
 <body>
@@ -638,8 +638,8 @@ include('./middlewares/protect.php');
     <img src="/img/whatsapp.png" alt="WhatsApp"
       style="width: 100px; height: 100px; position: fixed; bottom: 70px; right: 20px;" class="wap">
   </a>
-  <script src="/assets/scripts/swiper-bundle.min.js"></script>
-  <script src="/assets/scripts/scripts.js"></script>
+  <script src=".../assets/scripts/swiper-bundle.min.js"></script>
+  <script src=".../assets/scripts/scripts.js"></script>
 
 </body>
 
