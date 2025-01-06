@@ -2,29 +2,25 @@
 include("../conexao/conexao.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['acao'] == "cadastrar") {
-    // Recuperar os dados do formulário
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    // Recuperar os dados do formulário e prevenir SQL Injection
+    $nome = mysqli_real_escape_string($conn, $_POST['nome']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT); // Hash da senha
 
-    // Debug: Imprimir os valores recebidos do formulário
-    echo "Nome: " . $nome . "<br>";
-    echo "Email: " . $email . "<br>";
-    echo "Senha: " . $senha . "<br>";
-
-    // Query para inserir os dados no banco de dados
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+    // Query usando prepared statements
+    $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $nome, $email, $senha);
 
     // Executar a query
-    if (mysqli_query($conn, $sql)) {
-        // Se a inserção for bem-sucedida, redirecionar para index.php
+    if ($stmt->execute()) {
+        // Redirecionar para index.php após cadastro
         header("Location: index.php");
-        exit(); // Garante que nenhum outro conteúdo seja enviado para o navegador
+        exit();
     } else {
-        // Se houver algum erro na execução da query, você pode exibir uma mensagem de erro
-        echo "Erro: " . mysqli_error($conn);
+        echo "Erro: " . $stmt->error;
     }
 }
+
 
 ?>
 
@@ -42,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['aca
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/styles/style-log.css">
+    <link rel="stylesheet" href="../../assets/styles/style-log.css">
     <title>Dedetizadora|Login</title>
 </head>
 
@@ -71,11 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['acao']) && $_POST['aca
         </form>
 
         <br>
-        <a href="/src/views/index.php">Voltar ao Login</a>
-        <br>
-        <br>
-        <a href="/src/views/index.html">Início</a>
-        </a>
+        <a href="../../src/views/index.php">Voltar ao Login</a>
+        <br><br>
+        <a href="../../src/views/index.html">Início</a>
+
     </div>
 
 </body>

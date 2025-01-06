@@ -28,7 +28,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location: painel.php");
+            header("Location: ../views/painel.php");
         } else {
 
             echo "Falha ao logar! E-mail ou senha incorretos";
@@ -45,14 +45,16 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Dedetizadora|Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https:>//fonts.googleapis.com/css2?family=inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=".../assets/styles/style-log.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="../../assets/styles/style-log.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favico.png">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <title>Dedetizadora|Login</title>
+   
 </head>
 
 <body>
@@ -71,11 +73,11 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             <button> Entrar </button>
 
             <br>
-            <a href="/src/views/index.html">Início</a>
+            <a href="./index.html">Início</a>
             <br>
-            <a href="/src/views/cadastrarV2.php">Cadastrar-se</a>
+            <a href="./cadastrarV2.php">Cadastrar-se</a>
             <br>
-            <a href="/src/views/login-adm.php">Entrar como Admin</a>
+            <a href="./login-adm.php">Entrar como Admin</a>
 
         </form>
     </div>

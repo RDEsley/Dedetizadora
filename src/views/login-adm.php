@@ -1,4 +1,4 @@
-<?php include_once('./middlewares/validaLoginAdm.php'); ?>
+<?php include_once('../middlewares/validaLoginAdm.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/styles/style-log.css">
+    <link rel="stylesheet" href="../../assets/styles/style-log.css">
     <title>Dedetizadora|Login ADM</title>
 </head>
 
@@ -38,10 +38,10 @@
             <button class="btn btn-primary"> Entrar </button>
 
             <br>
-            <a href="/src/views/index.html">Início</a>
+            <a href="./index.html">Início</a>
             </a>
             <br>
-            <a href="/src/views/index.php">Voltar</a>
+            <a href="./index.php">Voltar</a>
             </a>
 
 
